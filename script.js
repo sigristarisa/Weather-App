@@ -8,6 +8,7 @@ const weatherForecast = (() => {
   const feelsLike = document.getElementById("feelsLike");
   const wind = document.getElementById("wind");
   const humidity = document.getElementById("humidity");
+  const weatherIcon = document.getElementById("weatherIcon");
 
   // fetch when user types in and press "enter"
   search.addEventListener("keypress", (event) => {
@@ -27,6 +28,18 @@ const weatherForecast = (() => {
           wind.innerText = `Wind: ${Math.floor(data.wind.speed)} MPH`;
           humidity.innerText = `Humidity: ${data.main.humidity} %`;
           console.log(data);
+
+          // changing the color scheme according to the weather
+          if (data.weather[0].main === "Clear") {
+            document.body.className = "clear";
+            weatherIcon.src = "./assets/circle.svg";
+          } else if (data.weather[0].main === "Clouds") {
+            document.body.className = "clouds";
+            weatherIcon.src = "./assets/cloud.svg";
+          } else if (data.weather[0].main === "Rain") {
+            document.body.className = "rain";
+            weatherIcon.src = "./assets/raindrops.svg";
+          }
         });
     }
   });
