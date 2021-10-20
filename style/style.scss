@@ -13,9 +13,6 @@ $grey: rgb(179, 178, 166);
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap"); // "Righteous", cursive;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); // "Montserrat", sans-serif;
 
-* {
-  // border: 2px solid red;
-}
 body {
   width: 100vw;
   height: 100vh;
@@ -96,6 +93,7 @@ body {
         }
         #bottomRight {
           font-family: "Montserrat", sans-serif;
+          font-weight: 800;
         }
       }
 
@@ -107,10 +105,8 @@ body {
         align-items: center;
 
         #weatherIcon {
-          width: 80%;
-          height: 80%;
-          filter: invert(97%) sepia(60%) saturate(14%) hue-rotate(241deg)
-            brightness(104%) contrast(100%);
+          width: 70%;
+          height: 70%;
         }
       }
     }
@@ -138,7 +134,7 @@ body {
   color: $light-blue;
   background-color: $green;
   #weatherIcon {
-    filter: invert(16%) sepia(45%) saturate(6945%) hue-rotate(204deg)
-      brightness(96%) contrast(96%);
+    filter: invert(44%) sepia(98%) saturate(1290%) hue-rotate(181deg)
+      brightness(108%) contrast(95%);
   }
 }

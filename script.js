@@ -34,10 +34,16 @@ const weatherForecast = (() => {
           if (data.weather[0].main === "Clear") {
             document.body.className = "clear";
             weatherIcon.src = "./assets/circle.svg";
-          } else if (data.weather[0].main === "Clouds") {
+          } else if (
+            data.weather[0].main === "Clouds" ||
+            data.weather[0].main === "Haze"
+          ) {
             document.body.className = "clouds";
             weatherIcon.src = "./assets/cloud.svg";
-          } else if (data.weather[0].main === "Rain") {
+          } else if (
+            data.weather[0].main === "Rain" ||
+            data.weather[0].main === "Drizzle"
+          ) {
             document.body.className = "rain";
             weatherIcon.src = "./assets/raindrops.svg";
           }

@@ -75,6 +75,7 @@ body main #bottomContainer #leftContainer #bottomLeft #celcius {
 }
 body main #bottomContainer #leftContainer #bottomRight {
   font-family: "Montserrat", sans-serif;
+  font-weight: 800;
 }
 body main #bottomContainer #rightContainer {
   width: 50%;
@@ -84,9 +85,8 @@ body main #bottomContainer #rightContainer {
   align-items: center;
 }
 body main #bottomContainer #rightContainer #weatherIcon {
-  width: 80%;
-  height: 80%;
-  filter: invert(97%) sepia(60%) saturate(14%) hue-rotate(241deg) brightness(104%) contrast(100%);
+  width: 70%;
+  height: 70%;
 }
 
 .clear {
@@ -110,7 +110,7 @@ body main #bottomContainer #rightContainer #weatherIcon {
   background-color: #177240;
 }
 .rain #weatherIcon {
-  filter: invert(16%) sepia(45%) saturate(6945%) hue-rotate(204deg) brightness(96%) contrast(96%);
+  filter: invert(44%) sepia(98%) saturate(1290%) hue-rotate(181deg) brightness(108%) contrast(95%);
 }
 
 /*# sourceMappingURL=style.css.map */
