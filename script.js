@@ -13,6 +13,7 @@ const weatherForecast = (() => {
   // fetch when user types in and press "enter"
   search.addEventListener("keypress", (event) => {
     if (event.key === "Enter") {
+      event.preventDefault();
       fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${search.value}&appid=b75119bca09124d69520a444216b1db2`
       )
@@ -41,6 +42,7 @@ const weatherForecast = (() => {
             weatherIcon.src = "./assets/raindrops.svg";
           }
         });
+      search.value = "";
     }
   });
 })();

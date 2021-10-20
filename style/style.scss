@@ -7,11 +7,15 @@ $blue: rgb(5, 87, 182);
 $white: white;
 $red: rgba(235, 57, 57, 0.89);
 $black: rgba(0, 0, 0, 0.822);
+$grey: rgb(179, 178, 166);
 
 // Fonts //
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap"); // "Righteous", cursive;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); // "Montserrat", sans-serif;
 
+* {
+  // border: 2px solid red;
+}
 body {
   width: 100vw;
   height: 100vh;
@@ -70,7 +74,7 @@ body {
         width: 50%;
         height: 100%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
 
         #bottomLeft {
@@ -105,7 +109,8 @@ body {
         #weatherIcon {
           width: 80%;
           height: 80%;
-          border: 0;
+          filter: invert(97%) sepia(60%) saturate(14%) hue-rotate(241deg)
+            brightness(104%) contrast(100%);
         }
       }
     }
@@ -115,13 +120,25 @@ body {
 .clear {
   color: $orange;
   background-color: $yellow;
+  #weatherIcon {
+    filter: invert(45%) sepia(83%) saturate(971%) hue-rotate(2deg)
+      brightness(108%) contrast(101%);
+  }
 }
 .clouds {
-  color: $black;
-  background-color: $red;
+  color: $white;
+  background-color: $grey;
+  #weatherIcon {
+    filter: invert(97%) sepia(60%) saturate(14%) hue-rotate(241deg)
+      brightness(104%) contrast(100%);
+  }
 }
 
 .rain {
   color: $light-blue;
   background-color: $green;
+  #weatherIcon {
+    filter: invert(16%) sepia(45%) saturate(6945%) hue-rotate(204deg)
+      brightness(96%) contrast(96%);
+  }
 }

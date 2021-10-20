@@ -54,7 +54,7 @@ body main #bottomContainer #leftContainer {
   width: 50%;
   height: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 body main #bottomContainer #leftContainer #bottomLeft {
@@ -86,22 +86,31 @@ body main #bottomContainer #rightContainer {
 body main #bottomContainer #rightContainer #weatherIcon {
   width: 80%;
   height: 80%;
-  border: 0;
+  filter: invert(97%) sepia(60%) saturate(14%) hue-rotate(241deg) brightness(104%) contrast(100%);
 }
 
 .clear {
   color: #ff8800;
   background-color: #f1da55;
 }
+.clear #weatherIcon {
+  filter: invert(45%) sepia(83%) saturate(971%) hue-rotate(2deg) brightness(108%) contrast(101%);
+}
 
 .clouds {
-  color: rgba(0, 0, 0, 0.822);
-  background-color: rgba(235, 57, 57, 0.89);
+  color: white;
+  background-color: #b3b2a6;
+}
+.clouds #weatherIcon {
+  filter: invert(97%) sepia(60%) saturate(14%) hue-rotate(241deg) brightness(104%) contrast(100%);
 }
 
 .rain {
   color: #22aaf8;
   background-color: #177240;
+}
+.rain #weatherIcon {
+  filter: invert(16%) sepia(45%) saturate(6945%) hue-rotate(204deg) brightness(96%) contrast(96%);
 }
 
 /*# sourceMappingURL=style.css.map */
