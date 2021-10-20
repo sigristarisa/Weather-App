@@ -105,8 +105,9 @@ body {
         align-items: center;
 
         #weatherIcon {
-          width: 70%;
-          height: 70%;
+          width: 80%;
+          height: 80%;
+          margin-bottom: 20px;
         }
       }
     }
@@ -117,6 +118,8 @@ body {
   color: $orange;
   background-color: $yellow;
   #weatherIcon {
+    width: 70%;
+    height: 70%;
     filter: invert(45%) sepia(83%) saturate(971%) hue-rotate(2deg)
       brightness(108%) contrast(101%);
   }

@@ -42,7 +42,8 @@ const weatherForecast = (() => {
             weatherIcon.src = "./assets/cloud.svg";
           } else if (
             data.weather[0].main === "Rain" ||
-            data.weather[0].main === "Drizzle"
+            data.weather[0].main === "Drizzle" ||
+            data.weather[0].main === "Mist"
           ) {
             document.body.className = "rain";
             weatherIcon.src = "./assets/raindrops.svg";

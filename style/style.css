@@ -85,8 +85,9 @@ body main #bottomContainer #rightContainer {
   align-items: center;
 }
 body main #bottomContainer #rightContainer #weatherIcon {
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
+  margin-bottom: 20px;
 }
 
 .clear {
@@ -94,6 +95,8 @@ body main #bottomContainer #rightContainer #weatherIcon {
   background-color: #f1da55;
 }
 .clear #weatherIcon {
+  width: 70%;
+  height: 70%;
   filter: invert(45%) sepia(83%) saturate(971%) hue-rotate(2deg) brightness(108%) contrast(101%);
 }
 
