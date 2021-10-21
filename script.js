@@ -28,7 +28,7 @@ const weatherForecast = (() => {
           )} °C`;
           wind.innerText = `Wind: ${Math.floor(data.wind.speed)} MPH`;
           humidity.innerText = `Humidity: ${data.main.humidity} %`;
-          console.log(data);
+          search.value = "";
 
           // changing the color scheme according to the weather
           if (data.weather[0].main === "Clear") {
@@ -48,8 +48,8 @@ const weatherForecast = (() => {
             document.body.className = "rain";
             weatherIcon.src = "./assets/raindrops.svg";
           }
-        });
-      search.value = "";
+        })
+        .catch((error) => console.error("SOMETHING IS WRONG", error));
     }
   });
 })();
