@@ -1,4 +1,4 @@
-// colors //
+// Colors //
 $yellow: rgb(241, 218, 85);
 $orange: rgb(255, 136, 0);
 $light-blue: #22aaf8;
@@ -12,6 +12,23 @@ $grey: rgb(179, 178, 166);
 // Fonts //
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap"); // "Righteous", cursive;
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); // "Montserrat", sans-serif;
+
+// Alignments //
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 * {
   box-sizing: border-box;
@@ -96,7 +113,7 @@ body {
   }
 }
 
-// weather classes
+// Weather Classes
 .clear {
   color: $orange;
   background-color: $yellow;
@@ -121,21 +138,4 @@ body {
     filter: invert(44%) sepia(98%) saturate(1290%) hue-rotate(181deg)
       brightness(108%) contrast(95%);
   }
-}
-
-// alignments
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.justify-content-center {
-  display: flex;
-  justify-content: center;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

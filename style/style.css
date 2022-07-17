@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -93,22 +109,6 @@ body main #bottomContainer #rightContainer #weatherIcon {
 }
 .rain #weatherIcon {
   filter: invert(44%) sepia(98%) saturate(1290%) hue-rotate(181deg) brightness(108%) contrast(95%);
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.justify-content-center {
-  display: flex;
-  justify-content: center;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
