@@ -8,27 +8,27 @@
     <link href="style/style.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="flex-column justify-content-center">
       <input type="text" placeholder="search city" id="search" />
     </header>
-    <main>
+    <main class="flex-column">
       <div id="topContainer">
         <p id="cityName"></p>
         <p id="weather"></p>
       </div>
-      <div id="bottomContainer">
-        <aside id="leftContainer">
-          <div id="bottomLeftContainer">
+      <div id="bottomContainer" class="center">
+        <aside id="leftContainer" class="center">
+          <div id="bottomLeftContainer" class="justify-content-center">
             <p id="temperature"></p>
             <p id="celcius"></p>
           </div>
-          <div id="bottomRightContainer">
+          <div id="bottomRightContainer" class="flex-column">
             <p id="feelsLike"></p>
             <p id="wind"></p>
             <p id="humidity"></p>
           </div>
         </aside>
-        <aside id="rightContainer">
+        <aside id="rightContainer" class="center">
           <img
             id="weatherIcon"
             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="

@@ -12,9 +12,6 @@ body {
 }
 body header {
   height: 20vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: flex-end;
 }
 body header #search {
@@ -28,8 +25,6 @@ body header #search {
 }
 body main {
   height: 80vh;
-  display: flex;
-  flex-direction: column;
 }
 body main #topContainer {
   height: 10vh;
@@ -45,19 +40,12 @@ body main #topContainer #weather {
 }
 body main #bottomContainer {
   height: 70vh;
-  display: flex;
-  align-content: center;
 }
 body main #bottomContainer #leftContainer {
   width: 50vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 body main #bottomContainer #leftContainer #bottomLeftContainer {
   width: 25vw;
-  display: flex;
-  justify-content: center;
   gap: 4px;
 }
 body main #bottomContainer #leftContainer #bottomLeftContainer #temperature {
@@ -70,17 +58,12 @@ body main #bottomContainer #leftContainer #bottomLeftContainer #celcius {
   align-self: flex-start;
 }
 body main #bottomContainer #leftContainer #bottomRightContainer {
-  display: flex;
-  flex-direction: column;
   gap: 12px;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
 }
 body main #bottomContainer #rightContainer {
   width: 50vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 body main #bottomContainer #rightContainer #weatherIcon {
   width: 400px;
@@ -110,6 +93,22 @@ body main #bottomContainer #rightContainer #weatherIcon {
 }
 .rain #weatherIcon {
   filter: invert(44%) sepia(98%) saturate(1290%) hue-rotate(181deg) brightness(108%) contrast(95%);
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

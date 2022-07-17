@@ -25,9 +25,6 @@ body {
 
   header {
     height: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: flex-end;
 
     #search {
@@ -43,8 +40,6 @@ body {
 
   main {
     height: 80vh;
-    display: flex;
-    flex-direction: column;
 
     #topContainer {
       height: 10vh;
@@ -63,19 +58,12 @@ body {
 
     #bottomContainer {
       height: 70vh;
-      display: flex;
-      align-content: center;
 
       #leftContainer {
         width: 50vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
         #bottomLeftContainer {
           width: 25vw;
-          display: flex;
-          justify-content: center;
           gap: 4px;
 
           #temperature {
@@ -89,8 +77,6 @@ body {
           }
         }
         #bottomRightContainer {
-          display: flex;
-          flex-direction: column;
           gap: 12px;
           font-family: "Montserrat", sans-serif;
           font-weight: 800;
@@ -99,9 +85,6 @@ body {
 
       #rightContainer {
         width: 50vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
         #weatherIcon {
           width: 400px;
@@ -113,6 +96,7 @@ body {
   }
 }
 
+// weather classes
 .clear {
   color: $orange;
   background-color: $yellow;
@@ -137,4 +121,21 @@ body {
     filter: invert(44%) sepia(98%) saturate(1290%) hue-rotate(181deg)
       brightness(108%) contrast(95%);
   }
+}
+
+// alignments
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
