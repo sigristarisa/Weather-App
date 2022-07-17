@@ -1,5 +1,5 @@
-import createWeatherPage from "./src/createWeatherPage.js";
-import createWeatherIcon from "./src/createWeatherIcon.js";
+import createWeatherPage from "./createWeatherPage.js";
+import createWeatherIcon from "./createWeatherIcon.js";
 
 search.addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
