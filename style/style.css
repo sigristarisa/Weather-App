@@ -1,21 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
   width: 100vw;
   height: 100vh;
-  margin: 0;
 }
 body header {
-  width: 100%;
-  height: 20%;
+  height: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
 }
 body header #search {
-  width: 250px;
-  margin: 10px 50px 0px 0px;
+  width: 240px;
+  margin: 8px 56px 0px 0px;
   border: none;
   background-color: transparent;
   border-bottom: 2px solid;
@@ -24,23 +27,22 @@ body header #search {
   font-size: 20px;
 }
 body main {
-  width: 100%;
-  height: 80%;
+  height: 80vh;
   display: flex;
   flex-direction: column;
 }
 body main #topContainer {
-  width: 80%;
-  height: 10%;
-  padding-left: 50px;
+  height: 10vh;
+  padding-left: 56px;
   font-family: "Montserrat", sans-serif;
+  border: red 1px solid;
 }
 body main #topContainer #cityName {
-  margin: 0;
-  margin-bottom: 5px;
+  font-size: 20px;
+  margin-bottom: 4px;
 }
 body main #topContainer #weather {
-  margin: 0;
+  font-size: 28px;
 }
 body main #bottomContainer {
   width: 95%;
@@ -63,12 +65,10 @@ body main #bottomContainer #leftContainer #bottomLeft {
   display: flex;
 }
 body main #bottomContainer #leftContainer #bottomLeft #temperature {
-  margin: 0;
   font-family: "Righteous", cursive;
   font-size: 150px;
 }
 body main #bottomContainer #leftContainer #bottomLeft #celcius {
-  margin: 0;
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
   align-self: flex-start;

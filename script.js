@@ -1,7 +1,6 @@
 import createWeatherPage from "./src/createWeatherPage.js";
 import createWeatherIcon from "./src/createWeatherIcon.js";
 
-// fetch when user types in and press "enter"
 search.addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
     event.preventDefault();
