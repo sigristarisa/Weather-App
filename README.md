@@ -1,0 +1,1 @@
+# Minimalist Weather App
