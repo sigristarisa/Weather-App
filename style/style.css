@@ -8,6 +8,7 @@
 body {
   width: 100vw;
   height: 100vh;
+  padding: 0px 56px;
 }
 body header {
   height: 20vh;
@@ -18,7 +19,6 @@ body header {
 }
 body header #search {
   width: 240px;
-  margin: 8px 56px 0px 0px;
   border: none;
   background-color: transparent;
   border-bottom: 2px solid;
@@ -33,60 +33,58 @@ body main {
 }
 body main #topContainer {
   height: 10vh;
-  padding-left: 56px;
   font-family: "Montserrat", sans-serif;
-  border: red 1px solid;
 }
 body main #topContainer #cityName {
   font-size: 20px;
-  margin-bottom: 4px;
+  font-weight: 800;
+  margin-bottom: 8px;
 }
 body main #topContainer #weather {
   font-size: 28px;
 }
 body main #bottomContainer {
-  width: 95%;
-  height: 80%;
-  padding-left: 50px;
+  height: 70vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 body main #bottomContainer #leftContainer {
-  width: 50%;
-  height: 100%;
+  width: 50vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body main #bottomContainer #leftContainer #bottomLeft {
-  width: 40%;
-  height: 50%;
+body main #bottomContainer #leftContainer #bottomLeftContainer {
+  width: 25vw;
   display: flex;
+  justify-content: center;
+  gap: 4px;
 }
-body main #bottomContainer #leftContainer #bottomLeft #temperature {
+body main #bottomContainer #leftContainer #bottomLeftContainer #temperature {
   font-family: "Righteous", cursive;
-  font-size: 150px;
+  font-size: 160px;
 }
-body main #bottomContainer #leftContainer #bottomLeft #celcius {
+body main #bottomContainer #leftContainer #bottomLeftContainer #celcius {
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
   align-self: flex-start;
 }
-body main #bottomContainer #leftContainer #bottomRight {
+body main #bottomContainer #leftContainer #bottomRightContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
 }
 body main #bottomContainer #rightContainer {
-  width: 50%;
-  height: 100%;
+  width: 50vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 body main #bottomContainer #rightContainer #weatherIcon {
-  width: 80%;
-  height: 80%;
+  width: 400px;
+  height: 400px;
   margin-bottom: 20px;
 }
 
@@ -95,8 +93,6 @@ body main #bottomContainer #rightContainer #weatherIcon {
   background-color: #f1da55;
 }
 .clear #weatherIcon {
-  width: 70%;
-  height: 70%;
   filter: invert(45%) sepia(83%) saturate(971%) hue-rotate(2deg) brightness(108%) contrast(101%);
 }
 
