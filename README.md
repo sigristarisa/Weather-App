@@ -1,6 +1,8 @@
 # Minimalistic Weather App
 A project from [The Odin Project](https://www.theodinproject.com/lessons/node-path-javascript-weather-app), aiming to search for the weather of a specific location and display the data by using the weather API.
 
+![weather-app-demo-gif](https://github.com/sigristarisa/Weather-App/blob/main/assets/weather-app-demo.gif)
+
 ## What Does It Do?
 1. Able to enter your choice of location in the search bar
 2. Displays the city name and  its current weather, along with the temperature, wind pressure and humidity once submitted
