@@ -1,5 +1,5 @@
 # Minimalistic Weather App
-A front-end project from [The Odin Project](https://www.theodinproject.com/lessons/node-path-javascript-weather-app), aiming to search for the weather of a specific location and display the data by using the weather API.
+A front-end project from [The Odin Project](https://www.theodinproject.com/lessons/node-path-javascript-weather-app), aiming to search the weather of a specific location and display the data by using the weather API.
 
 ![weather-app-demo-gif](https://github.com/sigristarisa/Weather-App/blob/main/assets/weather-app-demo.gif)
 
